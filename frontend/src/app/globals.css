@@ -1,0 +1,353 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shad{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.shad-right{
+  box-shadow: 0 0 15px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px 0px);
+}
+.image-cover{
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0, 0, 0, 0.773) 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.popular::-webkit-scrollbar, .explore::-webkit-scrollbar, .travelCategories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+ .popular, .explore, .travelCategories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .gradient{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.76) 100%);
+  }
+  
+  
+  .outbox-shad{
+    box-shadow: 1px 1px 1px white;
+  }
+
+  .fadein {
+    animation: fade-in .5s;
+  }
+  
+  @keyframes fade-in {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+  
+      opacity: 100;
+    }
+  }
+
+
+
+  .fadeout {
+    animation: fade-out .5s;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+  
+      opacity: 0;
+    }
+  }
+
+  .slideleft {
+    animation: slide-left .5s;
+  }
+  @keyframes slide-left {
+    from {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 100;
+    }
+  }
+
+
+  .slideright {
+    animation: slide-right .5s;
+  }
+  @keyframes slide-right {
+    from {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .fade-in-up {
+    animation: 0.75s both fadeInUp;
+  }
+
+
+  .shadow-white{
+    -webkit-box-shadow: 153px 94px 5px 0px white;
+-moz-box-shadow: 153px 94px 5px 0px white;
+box-shadow: 153px 94px 5px 0px white;
+
+  }
+  
+  .btn-grad{
+    background: hsla(225, 96%, 11%, 1);
+  
+  background: linear-gradient(180deg, hsla(225, 96%, 11%, 1) 0%, hsla(229, 56%, 36%, 1) 100%);
+  
+  background: -moz-linear-gradient(0deg, hsla(225, 96%, 11%, 1) 0%, hsla(229, 56%, 36%, 1) 100%);
+  
+  background: -webkit-linear-gradient(0deg, hsla(225, 96%, 11%, 1) 0%, hsla(229, 56%, 36%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#010E36", endColorstr="#293C91", GradientType=1 );
+  }
+
+  .btn-grad-light{
+    background: -webkit-linear-gradient(0deg, hsl(225deg 68.37% 55.2%) 0%, hsla(229, 56%, 36%, 1) 100%);
+  }
+  
+*{
+  scrollbar-width: thin !important;
+}
+
+
+.search::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.search:-moz-placeholder {
+  color: #ffffff;
+}
+.search::-moz-placeholder{
+  color: #ffffff;
+}
+.search:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6100 !important;
+}
+.detailpackageImageSlider .swiper-pagination{
+  bottom: 0 !important;
+}
+.detailpackageImageSlider .swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 1;
+  border-radius: 2px;
+  width: 20px;
+  height: 3px;
+}
+.detailpackageImageSlider .swiper-pagination-bullet-active {
+  background-color: #ff6100 !important;
+}
+
+
+.image-cover-2 {
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.773) 93%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-shadow{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.warm-effect {
+  filter: sepia(0.2) hue-rotate(-10deg) saturate(1.2);
+}
+
+
+.phone-input .react-tel-input .form-control:focus {
+  background-color: #fff;
+  border-color: #ff0002;
+  outline: 0;
+  box-shadow: none;
+}
+
+
+
+@media screen and (max-width:768px) {
+  .stop-scroll {
+    overflow: hidden !important;
+  }
+  
+}
+
+
+.bidmodalbg{
+  background: rgb(206,173,138);
+  background: linear-gradient(149deg, #cead8a 0%, rgba(243,236,227,1) 38%, rgba(255,255,255,1) 79%);}
+
+
+  * {
+    scroll-behavior: smooth !important;
+}
+
+
+
+
+
+
+
+
+.slider-range {
+  position: relative;
+  width: 250px;
+}
+
+.slider__track,
+.slider__range {
+  border-radius: 3px;
+  height: 5px;
+  position: absolute;
+}
+
+.slider__track {
+  background-color:#d5d5d5 !important;
+  width: 250px;
+  z-index: 1;
+}
+
+.slider__range {
+  background-color: #9fe5e1;
+  z-index: 2;
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 230px;
+  outline: none;
+}
+
+.thumb--zindex-3 {
+  z-index: 3;
+}
+
+.thumb--zindex-4 {
+  z-index: 4;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+
+.slider__left-value, .slider__right-value{
+  border: 1px solid rgb(134, 134, 134) !important;
+  border-radius: 5px !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+
+.closed-banner {
+  min-height: 0px;
+  height: 0;
+  overflow: hidden;
+}
+
+.open-banner {
+  min-height: 100px;
+  height: 100px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+
+.scrollbar::webkit-scrollbar-button { 
+  display:none;
+ }
+
+
+.emi-dektop-bg{
+  background: linear-gradient(-90deg, #FFFFFF 0%, #FFE8D7 100%);
+}
+
+
+.schedule-grad{
+  background: linear-gradient(181deg, #FFFFFF 0%, #fff5ee 100%);
+}
